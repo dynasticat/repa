@@ -32,3 +32,12 @@ public class TimelinePlayableWizard : EditorWindow
 
             return name.ToLower().CompareTo(other.name.ToLower());
         }
+  public static UsableType[] GetUsableTypesFromVariableArray (Variable[] variables)
+        {
+            UsableType[] usableTypes = new UsableType[variables.Length];
+            for (int i = 0; i < usableTypes.Length; i++)
+            {
+                usableTypes[i] = variables[i].usableType;
+            }
+            return usableTypes;
+        }
