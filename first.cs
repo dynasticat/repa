@@ -23,7 +23,7 @@ public class TimelinePlayableWizard : EditorWindow
   public int CompareTo (object obj)
         {
             if (obj == null)
-                return 1;
+                return 1;//yes
 
             UsableType other = (UsableType)obj;
 
